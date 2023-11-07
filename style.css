@@ -462,6 +462,7 @@ footer{
     padding: 15px;
 }
 .bannerDesc {
+    padding: 10px ;
     text-align: center;
 }
 .serviceContainer p::after {
