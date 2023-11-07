@@ -171,7 +171,7 @@
        </div>
        <div class="container py-4">
         <div class="row">
-          <div class="col-md-5 br-right" data-aos="fade-up">
+          <div class="col-md-5" data-aos="fade-up">
             <ul class="nav flex-column nav-pills" id="tabList">
               <li class="nav-item">
                 <a class="nav-link active" data-bs-toggle="tab" href="#tab1"><h3 class="tabsTitle"><span>01 </span>Website development </h3></a>
@@ -305,13 +305,13 @@
             Learn how we provide our innovative solutions on time and on budget.
           </p>
           <div class="row py-3">
-            <div class="col-md-4 col-4">          <h5 data-aos="fade-up" data-aos-delay="300" class="counterText"><span class="counter">1000</span>+</h5>
+            <div class="col-md-4">          <h5 data-aos="fade-up" data-aos-delay="300" class="counterText"><span class="counter">1000</span>+</h5>
               <p class="counterTextP"   data-aos="fade-up" data-aos-delay="300">Happy customers</p>
             </div>
-            <div class="col-md-4 col-4">          <h5 data-aos="fade-up" data-aos-delay="400" class="counterText"><span class="counter">12</span></h5>
+            <div class="col-md-4">          <h5 data-aos="fade-up" data-aos-delay="400" class="counterText"><span class="counter">12</span></h5>
               <p class="counterTextP"  data-aos="fade-up" data-aos-delay="300">Years of experience</p>
             </div>
-            <div class="col-md-4 col-4">          <h5 data-aos="fade-up" data-aos-delay="500" class="counterText"><span class="counter">300</span>+</h5>
+            <div class="col-md-4">          <h5 data-aos="fade-up" data-aos-delay="500" class="counterText"><span class="counter">300</span>+</h5>
               <p class="counterTextP"  data-aos="fade-up" data-aos-delay="300">Employees</p>
             </div>
             <div class="col-md-4">            <button data-aos="fade-up" data-aos-delay="600" class="btn btnPrimary">Let's talk</button>
@@ -467,7 +467,7 @@
         </div>
                 
                 <div class="row py-5 br-bottom">
-                  <div class="col-md-3 py-3" data-aos="fade-up" data-aos-delay="300">
+                  <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
                     <img src="./images/logo.svg" alt="">
                     <h5 class="logoText">Designs | Words | Codes</h5>
                   </div>
@@ -478,14 +478,14 @@
                     <p><a href="">Process</a></p>
                     <p><a href="">Contact Us</a></p>
                   </div>
-                  <div class="col-md-2 footerMenu py-3" data-aos="fade-up" data-aos-delay="300">
+                  <div class="col-md-2 footerMenu" data-aos="fade-up" data-aos-delay="300">
                     <h5 >Why Veuz</h5>
                     <p><a href="">Portfolio</a></p>
                     <p><a href="">Testimonials</a></p>
                     <p><a href="">Careers</a></p>
                     <p><a href="">Resources</a></p>
                   </div>
-                  <div class="col-md-2 footerMenu py-3" data-aos="fade-up" data-aos-delay="300">
+                  <div class="col-md-2 footerMenu" data-aos="fade-up" data-aos-delay="300">
                     <h5 >Services</h5>
                     <p><a href="">Website development </a></p>
                     <p><a href="">Mobile application development </a></p>
@@ -493,7 +493,7 @@
                     <p><a href="">Digital Marketing</a></p>
                     <p><a href="">Cyber security</a></p>
                   </div>
-                  <div class="col-md-3 footerMenu py-3" data-aos="fade-up" data-aos-delay="300">
+                  <div class="col-md-3 footerMenu" data-aos="fade-up" data-aos-delay="300">
                     <h5 >Have questions?</h5>
                     <p><img width="10px" src="./images/mailPink.png" alt=""> <a href="">support@veuzconcepts.com </a></p>
                     <p><img src="./images/callPink.png" alt=""> <a href="">+91 9544 33 1111 </a></p>
@@ -591,25 +591,7 @@ responsive: {
 });
 
 </script>
-<script>
-const navbar = document.getElementById('navbar');
 
-const scrollThreshold = 100; 
-function updateNavbarBackground() {
-  if (window.scrollY > scrollThreshold) {
-    navbar.style.backgroundColor = '#F9365F'; 
-  } else {
-    navbar.style.backgroundColor = 'transparent'; 
-  }
-}
-
-// Attach an event listener to the window's scroll event
-window.addEventListener('scroll', updateNavbarBackground);
-
-// Call the function initially to set the initial state
-updateNavbarBackground();
-
-</script>
 <script>
    AOS.init();
  </script>  

@@ -426,7 +426,9 @@ footer{
 
 @media only screen and (max-width: 768px){
     .ctaImageSection h2{
-        font-size:60px;
+        overflow-x: hidden;
+        font-size:80px;
+        padding: 20px 0px;
     }
     .imageCta {
       
@@ -461,5 +463,27 @@ footer{
 }
 .bannerDesc {
     text-align: center;
+}
+.serviceContainer p::after {
+    content: " ";
+    position: absolute;
+    border-bottom: 2px solid #7E7E7E;
+    width: 50px;
+    left: 25%;
+    height: 13px;
+}
+.subtitleProcess::after {
+    content: " ";
+    position: absolute;
+    border-bottom: 2px solid #7E7E7E;
+    width: 50px;
+    left: 20%!important;
+    height: 13px;
+}
+.themeButton a {
+    padding: 0px;
+}
+.br-right{
+    border: none;
 }
 }
