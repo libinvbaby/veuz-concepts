@@ -423,6 +423,81 @@ footer{
     font-size: 15px;color: #fff;
 }
 
+  
+  .darkmode-switch, .toggle {
+    height: 23px;
+    border-radius: 100px;
+  }
+  
+  .darkmode-switch{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: rotate(270deg);
+    display: flex;
+    width: 10em;
+    background-color: rgba(0,0,0,.1);
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  
+  .toggle {
+    position: absolute;
+    width: 50%;
+    height: 23px;
+
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,.15);
+    transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .names {
+    font-size: 90%;
+    font-weight: bolder;
+    width: 65%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+  }
+  .dark-name {
+    opacity: .5;
+  }
+  
+  #darkmode-checkbox {
+    display: none;
+  }
+  
+  input[id="darkmode-checkbox"]:checked + .body{
+    background-color:  #26242E;
+    color: white;
+  }
+  
+   [id="darkmode-checkbox"]:checked + .body .toggle{
+    transform: translateX(100%);
+    background-color: #34323D;
+  }
+  
+  [id="darkmode-checkbox"]:checked + .body .dark-name{
+    opacity: 1;
+  }
+  [id="darkmode-checkbox"]:checked + .body .light{
+    opacity: .5;
+  }
+.icons img{
+    z-index: 9999999;
+    width: 70px;
+    padding:10px;
+}
+.searchIcon{
+    bottom:0;
+    left: 0;
+}
+.chatICon{
+    bottom:0;
+    right: 0;
+}
 
 @media only screen and (max-width: 768px){
     .ctaImageSection h2{
@@ -486,5 +561,9 @@ footer{
 }
 .br-right{
     border: none;
+}
+.darkmode-switch {
+    left: -50px;
+    top: 18%;
 }
 }
